@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darker">
+
+
+    <ImageButton
+        android:id="@+id/BackToPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/average"
+        android:src="@drawable/icons8_left_96___"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck">
+
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/BackToPage"
+        android:fontFamily="sans-serif-light"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/graier"
+        android:src="@android:drawable/ic_menu_add"
+
+        app:backgroundTint="@color/common_gray"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BackToPage"
+        android:layout_marginStart="5dp"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/workList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/add"
+        android:layout_below="@+id/BackToPage"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:divider="@color/darker"
+        android:dividerHeight="@dimen/cardview_default_radius" />
+
+    <ImageView
+        android:id="@+id/schedule"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/free_icon_schedule_7107532" />
+
+    <TextView
+        android:id="@+id/withoutAffairs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/schedule"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Список дел пуст"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/average" />
+
+
+</RelativeLayout>

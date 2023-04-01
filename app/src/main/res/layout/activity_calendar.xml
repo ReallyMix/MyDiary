@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darker"
+    tools:context=".CalendarActivity">
+
+    <ImageButton
+        android:id="@+id/toPast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/average"
+        app:srcCompat="@drawable/icons8_left_96___" />
+
+    <ImageButton
+        android:id="@+id/toFur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toPast"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="@color/average"
+        app:srcCompat="@drawable/icons8_right_96___" />
+
+
+
+    <ListView
+        android:id="@+id/ListOfDates"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/toPast"
+
+        android:layout_marginRight="5dp"
+        android:dividerHeight="3dp"
+        android:divider="@color/darker">
+
+
+    </ListView>
+</RelativeLayout>
