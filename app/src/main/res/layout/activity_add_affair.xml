@@ -41,6 +41,7 @@
         android:backgroundTint="@color/graier"
 
         android:fontFamily="sans-serif-light"
+        android:text=""
         android:foregroundTint="@color/white"
         android:hint="Описание (необязательно)"
         android:overScrollMode="always"

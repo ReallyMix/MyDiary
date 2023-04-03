@@ -114,7 +114,16 @@ public class AddAffairActivity extends AppCompatActivity {
 
                 }
 
+                else if (EditTitle.getText().toString().equals("") && EditDisc.getText().toString().equals("")) {
 
+                    Toast.makeText(getApplicationContext(), "Нет данных для удаления",Toast.LENGTH_SHORT).show();
+                }
+
+                else {
+
+                    Intent intent = new Intent(AddAffairActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
 
             }
         });
